@@ -3,10 +3,10 @@ function randomNumber(min, max) {
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-console.log(randomNumber(2, 4));
+alert(randomNumber(2, 4));
 
 function randomFractional(min, max, signs) {
-  let rand = Math.random() * (max - min) + min;
+  const rand = Math.random() * (max - min) + min;
   return (rand.toPrecision(signs));
 }
-console.log(randomFractional(2, 4, 4));
+alert(randomFractional(2, 4, 4));
